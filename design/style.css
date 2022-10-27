@@ -116,7 +116,7 @@ main {
   margin-top: 40px;
   border: solid 1px rgb(17, 11, 1);
   border-radius: 12px;
-  background-image: url(/img/woodtexture.png);
+  background-image: url(../img/woodtexture.png);
   background-size: cover;
 }
 .article-left p,
@@ -307,9 +307,7 @@ justify-content: space-between;
   justify-content: initial;
 }
 
-#d1{
 
-}
 d2{
   display: flex;
   justify-content: end;
