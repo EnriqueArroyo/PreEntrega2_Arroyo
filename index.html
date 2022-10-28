@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto&display=swap"
       rel="stylesheet"
     />
@@ -19,16 +25,40 @@
   </head>
   <body>
     <header>
-      <nav>
-        <div class="nav">
-          <a href=""><img src="./img/logo.png" alt="" width="10.2%" /></a>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./web/clases.html">Clases</a></li>
-            <li><a href="./web/razas.html">Razas</a></li>
-            <li><a href="./web/reglas.html">Reglas</a></li>
-            <li><a href="./web/contacto.html">Contacto</a></li>
-          </ul>
+      <nav class="navbar navbar-dark navbar-expand-lg nav">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./img/logo.png"
+              alt="logo"
+              class="logo-brand"
+              width="48px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <div
+            class="collapse navbar-expand-sm navbar-collapse"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a href="./index.html">Home</a></li>
+              <li class="nav-item"><a href="./web/clases.html">Clases</a></li>
+              <li class="nav-item"><a href="./web/razas.html">Razas</a></li>
+              <li class="nav-item"><a href="./web/reglas.html">Reglas</a></li>
+              <li class="nav-item">
+                <a href="../web/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -62,56 +92,58 @@
           juego única entre los jugadores.
         </p>
 
-        <article class="article-left">
-          <img src="./img/aventuras.png" alt="" />
-          <div>
-            <h2>Aventuras</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              vel, nulla tempore distinctio et amet officia quae, omnis modi
-              laudantium aliquid repellendus aspernatur libero pariatur cumque
-              rem nobis. Quod, voluptas!
-            </p>
-          </div>
-        </article>
-        <article class="article-right">
-          <div>
-            <h2>Razas</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              consequuntur tempore iure itaque nihil veniam magnam totam
-              pariatur eos. Quibusdam impedit, fugit ducimus omnis earum vitae
-              velit dolor nesciunt ut.
-            </p>
-          </div>
-          <img src="./img/razas.png" alt="" height="277" />
-        </article>
-        <article class="article-left">
-          <img src="./img/clases.png" alt="" height="277" />
-          <div>
-            <h2>Clases</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-              nisi labore laudantium sequi dolores incidunt, voluptatem sint
-              maiores. Ab voluptatibus quam, perferendis blanditiis eum id
-              dolore earum harum ex fugit!
-            </p>
-          </div>
-        </article>
-        <article class="article-right">
-          <div>
-            <h2>Reglas</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perferendis, qui ipsum accusamus, amet minus dolorum repellendus
-              voluptatum in aliquam, corporis quod. Quo iure totam magni maiores
-              enim, dolor repellendus mollitia?
-            </p>
-          </div>
-          <img src="./img/personajes.png" alt="" height="277" />
-        </article>
-        
-        
+        <div class="container d-md-none d-lg-block">
+          <article class="article-left">
+            <img src="./img/aventuras.png" alt="" />
+            <div>
+              <h2>Aventuras</h2>
+              <p>
+                Pathfinder cuenta con cientas de aventuras para disfrutar con
+                tus aventureros, desde exploracion de ruinas milenarias hasta
+                ciudades gigantes donde la magia y la técnologia conviven para
+                hacer la vida de sus ciudadanos mas sencillas. Descubre lo que
+                hay alla afuera.
+              </p>
+            </div>
+          </article>
+          <article class="article-right">
+            <div>
+              <h2>Razas</h2>
+              <p>
+                La selección de raza posiblemente sea el paso más importante que
+                cualquier héroe debe tomar para empezar su aventura, no hay
+                vuelta atrás y la selección de la misma determinará la evolución
+                de tu personaje, siempre y cuando sobreviva a la siguiente
+                campaña.
+              </p>
+            </div>
+            <img src="./img/razas.png" alt="" height="277" />
+          </article>
+          <article class="article-left">
+            <img src="./img/clases.png" alt="" height="277" />
+            <div>
+              <h2>Clases</h2>
+              <p>
+                Las clases representan profesiones escogidas que adoptan los
+                personajes y algunas otras criaturas. Las clases proporcionan
+                una amplia variedad de modificadores, que permiten a los
+                personajes llevar a cabo acciones que de otro modo no podrían.
+              </p>
+            </div>
+          </article>
+          <article class="article-right">
+            <div>
+              <h2>Reglas</h2>
+              <p>
+                Pathfinder es una evolución de las reglas 3.5 del más famoso
+                juego de rol de la historia, actualizadas a partir de las
+                aportaciones de más de 50.000 jugadores. Los jugadores sólo
+                necesitan este manual de 576 páginas para jugar.
+              </p>
+            </div>
+            <img src="./img/personajes.png" alt="" height="277" />
+          </article>
+        </div>
 
         <iframe
           width="80%"
@@ -128,7 +160,8 @@
     <footer>
       <div class="footer">
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          ©2002-2022 Paizo Inc.® All Rights Reserved.
+Copyright & Trademark | Privacy Policy
         </p>
 
         <div>
@@ -149,5 +182,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
