@@ -68,6 +68,7 @@ li a:hover {
 .navexpand{
   background-color: rgba(0, 0, 0, 0.519);
   width: 100%;
+  
   border-radius: 35px;
   filter: blur(10 px);
 }
