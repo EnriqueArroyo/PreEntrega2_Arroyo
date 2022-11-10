@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Roboto&display=swap"
       rel="stylesheet"
     />
@@ -44,78 +50,128 @@
           width="100%"
         />
         <div class="title-logo">
-          <img
-          class=""
-          src="/img/title.png"
-          alt="Pathfinder"
-          width="50%"
-        />
+          <img class="" src="../img/title.png" alt="Pathfinder" width="50%" />
         </div>
-       
       </div>
-
       <section class="home home-rg">
         <h1>Reglas</h1>
 
-        <article>
-          <div><h2>Movimientos</h2></div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              iste iusto labore eveniet doloremque modi nobis molestiae vero
-              necessitatibus non distinctio, quas ad iure, odit dolores cum quia
-              aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
-              alias ut mollitia consequatur magnam veniam a omnis illum eum
-              placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
-              ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
-              incidunt. Ipsa in consectetur explicabo fugit officia quaerat
-              voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
-              ullam repellat nostrum adipisci exercitationem iste tenetur.
-            </p>
+        <!-- Visible solo mas grande que md -->
+        <div class="container d-none d-lg-block d-xl-block">
+          <article>
+            <div><h2>Movimientos</h2></div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                iste iusto labore eveniet doloremque modi nobis molestiae vero
+                necessitatibus non distinctio, quas ad iure, odit dolores cum quia
+                aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
+                alias ut mollitia consequatur magnam veniam a omnis illum eum
+                placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
+                ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
+                incidunt. Ipsa in consectetur explicabo fugit officia quaerat
+                voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
+                ullam repellat nostrum adipisci exercitationem iste tenetur.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div><h2>Ataque</h2></div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                iste iusto labore eveniet doloremque modi nobis molestiae vero
+                necessitatibus non distinctio, quas ad iure, odit dolores cum quia
+                aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
+                alias ut mollitia consequatur magnam veniam a omnis illum eum
+                placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
+                ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
+                incidunt. Ipsa in consectetur explicabo fugit officia quaerat
+                voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
+                ullam repellat nostrum adipisci exercitationem iste tenetur.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div><h2>Turnos</h2></div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                iste iusto labore eveniet doloremque modi nobis molestiae vero
+                necessitatibus non distinctio, quas ad iure, odit dolores cum quia
+                aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
+                alias ut mollitia consequatur magnam veniam a omnis illum eum
+                placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
+                ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
+                incidunt. Ipsa in consectetur explicabo fugit officia quaerat
+                voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
+                ullam repellat nostrum adipisci exercitationem iste tenetur.
+              </p>
+            </div>
+          </article>
           </div>
-        </article>
-        <article>
-          <div><h2>Ataque</h2></div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              iste iusto labore eveniet doloremque modi nobis molestiae vero
-              necessitatibus non distinctio, quas ad iure, odit dolores cum quia
-              aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
-              alias ut mollitia consequatur magnam veniam a omnis illum eum
-              placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
-              ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
-              incidunt. Ipsa in consectetur explicabo fugit officia quaerat
-              voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
-              ullam repellat nostrum adipisci exercitationem iste tenetur.
-            </p>
+          <div class="sm container  d-md-block d-lg-none">
+            <article>
+              <div><h2>Movimientos</h2></div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                  iste iusto labore eveniet doloremque modi nobis molestiae vero
+                  necessitatibus non distinctio, quas ad iure, odit dolores cum quia
+                  aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
+                  alias ut mollitia consequatur magnam veniam a omnis illum eum
+                  placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
+                  ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
+                  incidunt. Ipsa in consectetur explicabo fugit officia quaerat
+                  voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
+                  ullam repellat nostrum adipisci exercitationem iste tenetur.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div><h2>Ataque</h2></div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                  iste iusto labore eveniet doloremque modi nobis molestiae vero
+                  necessitatibus non distinctio, quas ad iure, odit dolores cum quia
+                  aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
+                  alias ut mollitia consequatur magnam veniam a omnis illum eum
+                  placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
+                  ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
+                  incidunt. Ipsa in consectetur explicabo fugit officia quaerat
+                  voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
+                  ullam repellat nostrum adipisci exercitationem iste tenetur.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div><h2>Turnos</h2></div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                  iste iusto labore eveniet doloremque modi nobis molestiae vero
+                  necessitatibus non distinctio, quas ad iure, odit dolores cum quia
+                  aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
+                  alias ut mollitia consequatur magnam veniam a omnis illum eum
+                  placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
+                  ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
+                  incidunt. Ipsa in consectetur explicabo fugit officia quaerat
+                  voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
+                  ullam repellat nostrum adipisci exercitationem iste tenetur.
+                </p>
+              </div>
+            </article>
           </div>
-        </article>
-        <article>
-          <div><h2>Turnos</h2></div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-              iste iusto labore eveniet doloremque modi nobis molestiae vero
-              necessitatibus non distinctio, quas ad iure, odit dolores cum quia
-              aut sed. Rem tempora aperiam sunt! Sunt nulla quibusdam, quas
-              alias ut mollitia consequatur magnam veniam a omnis illum eum
-              placeat sequi. Sunt neque fuga at culpa doloremque nemo nisi
-              ducimus adipisci! Dicta perspiciatis enim, rem dolore ipsam
-              incidunt. Ipsa in consectetur explicabo fugit officia quaerat
-              voluptates doloremque quis voluptate, culpa dolor obcaecati a. Ex
-              ullam repellat nostrum adipisci exercitationem iste tenetur.
-            </p>
-          </div>
-        </article>
+        
       </section>
     </main>
 
     <footer>
       <div class="footer">
         <p>
-          ©2002-2022 Paizo Inc.® All Rights Reserved.
-Copyright & Trademark | Privacy Policy
+          ©2002-2022 Paizo Inc.® All Rights Reserved. Copyright & Trademark |
+          Privacy Policy
         </p>
 
         <div>
@@ -136,5 +192,10 @@ Copyright & Trademark | Privacy Policy
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
