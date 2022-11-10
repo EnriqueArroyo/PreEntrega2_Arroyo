@@ -337,7 +337,7 @@ iframe {
 /*-------------- Contacto --------------*/
 
 .div {
-  display: flex;
+  display: flexbox;
 justify-content: space-between;
   width: 95%;
   margin: 2.5%;
@@ -349,7 +349,7 @@ justify-content: space-between;
 
 
 d2{
-  display: flex;
+  display: flexbox;
   justify-content: end;
 }
 
