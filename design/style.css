@@ -132,6 +132,31 @@ main {
   border-radius: 10px;
 }
 
+/* ------------- MAIN TEXT XS a MD-----------------*/
+
+.home .sm article {
+  box-shadow: 15px 15px 20px black;
+  display: flex;
+  flex-direction: Column;
+  margin-top: 40px;
+  border: solid 1px rgb(17, 11, 1);
+  border-radius: 12px;
+  background-image: url(../img/woodtexture.png);
+  background-size: cover;
+}
+.article-left p,
+.article-left h2 {
+  margin: 20px;
+  min-height: 50px;
+}
+.article-right p,
+.article-right h2 {
+  margin: 20px;
+}
+.sm img {
+  border-radius: 10px 10px 0px 0px;
+}
+
 /* ------------- MAIN TEXT-----------------*/
 section {
   color: white;
