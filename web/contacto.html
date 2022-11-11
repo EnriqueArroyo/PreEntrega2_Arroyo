@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <meta name="descritpion" content="Espacio de contacto para quitarte todas las dudas que tengas respecto a Pathfinder">
+    <meta name="keywords" content="ROL, RPG, JUEGOS DE MESA, PATHFINDER, D&D, DADOS, CLASES, RAZAS, REGLAS, GOBLINS">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +21,7 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="../img/logo.ico" />
-    <link rel="stylesheet" type="text/css" href="../design/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
     <title>Contacto</title>
   </head>
@@ -119,82 +121,85 @@
           mejor cuando se trabaja en grupo. Adéntrate ya en el mundo de Albion y
           escribe tu propia historia
         </p>
-
-        <fieldset>
-          <legend>Datos</legend>
-          <div class="div">
-            <div id="d1">
-              <input type="text" name="Nombre" id="" placeholder="Nombre" />
-              <input type="email" name="" id="" placeholder="email" />
-            </div>
-            <div id="d2">
-              <div>
-                <label for="fecha">Cumpleaños:</label>
+        <div class="formulario">
+          <fieldset>
+            <legend>Datos</legend>
+            <div class="div">
+              <div id="d1">
+                <input type="text" name="Nombre" id="" placeholder="Nombre" />
+                <input type="email" name="" id="" placeholder="email" />
               </div>
-              
-              <input type="date" name="" id="fecha" />
+              <div id="d2">
+                <div>
+                  <label for="fecha">Cumpleaños:</label>
+                </div>
+                
+                <input type="date" name="" id="fecha" />
+              </div>
             </div>
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>Tu personaje favorito</legend>
-          <div class="div">
-            <input type="text" name="Nombre" id="" placeholder="Nombre" />
-
-            <div>
-              <label for="">Raza:</label>
+          </fieldset>
+  
+          <fieldset>
+            <legend>Tu personaje favorito</legend>
+            <div class="div">
+              <input type="text" name="Nombre" id="" placeholder="Nombre" />
+  
+              <div>
+                <label for="">Raza:</label>
+                <select name="select">
+                  <option value="value1">Humano</option>
+                  <option value="value2">Elfo</option>
+                  <option value="value2">Enano</option>
+                </select>
+              </div>
+  
+              <div>
+                <label for="">Clase:</label>
+                <select name="select">
+                  <option value="value1">Guerrero</option>
+                  <option value="value2">Mago</option>
+                  <option value="value2">Monje</option>
+                </select>
+              </div>
+            </div>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Breve trasfondo de tu personaje"
+            ></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Consulta</legend>
+            <div class="div div2">
+              <div>
+                <label for="">Clase de consulta:</label>
+              </div>
               <select name="select">
-                <option value="value1">Humano</option>
-                <option value="value2">Elfo</option>
-                <option value="value2">Enano</option>
+                <option value="value1">Otros</option>
+                <option value="value1">Quiero unirme</option>
+                <option value="value1">Consultas</option>
+                <option value="value1">Subscripciones</option>
               </select>
             </div>
-
-            <div>
-              <label for="">Clase:</label>
-              <select name="select">
-                <option value="value1">Guerrero</option>
-                <option value="value2">Mago</option>
-                <option value="value2">Monje</option>
-              </select>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Ingresa tu consulta"
+            ></textarea>
+          </fieldset>
+            <div class="div final">
+              <div>
+                <input class="input-button"  type="checkbox" name="newletter" /> Recibir noticias por mail
+              </div>
+              <button id="enviar">Enviar</button>
             </div>
           </div>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Breve trasfondo de tu personaje"
-          ></textarea>
-        </fieldset>
-        <fieldset>
-          <legend>Consulta</legend>
-          <div class="div div2">
-            <div>
-              <label for="">Clase de consulta:</label>
-            </div>
-            <select name="select">
-              <option value="value1">Otros</option>
-              <option value="value1">Quiero unirme</option>
-              <option value="value1">Consultas</option>
-              <option value="value1">Subscripciones</option>
-            </select>
-          </div>
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Ingresa tu consulta"
-          ></textarea>
-        </fieldset>
-        <div class="div">
-          <div>
-            <input type="checkbox" name="newletter" /> Recibir noticias por mail
-          </div>
-          <button id="enviar">Enviar</button>
-        </div>
+          
+        
       </section>
     </main>
 

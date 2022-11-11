@@ -1,0 +1,311 @@
+* {
+  font-family: "Noto Serif", serif;
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  margin: 0px;
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  cursor: url("../img/cursor.cur"), auto;
+  cursor: url("../img/cursor.cur"), pointer;
+  cursor: pointer=url("../img/cursor.cur"); }
+
+/* ------------- NAV -----------------*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-image: url(../img/metaltexture.png);
+  border-bottom: solid 0.2px #0e1521;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 100px 60px #0e1521;
+  height: 58px;
+  position: fixed;
+  z-index: 99999999999999;
+  width: 100%;
+  color: white; }
+  .nav a {
+    margin-left: 5%;
+    transition: 0.5s ease; }
+  .nav img:hover {
+    transition: 0.5s ease;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.604)); }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0px;
+  margin-right: 5%;
+  padding: 0px; }
+  ul li {
+    margin: 10px; }
+    ul li a {
+      font-family: "Roboto", sans-serif;
+      color: white;
+      text-decoration: none;
+      transition: 0.5s ease; }
+      ul li a:hover {
+        color: #128a7e;
+        filter: drop-shadow(0px 0px 10px white); }
+
+/* ------------- NAV SM -----------------*/
+.navexpand {
+  background-color: rgba(0, 0, 0, 0.574);
+  width: 100%;
+  border-radius: 12px;
+  filter: blur(10 px); }
+
+/* ------------- MAIN -----------------*/
+main {
+  background-color: rgba(2, 9, 7, 0.628);
+  margin-left: 5%;
+  margin-right: 5%;
+  border-left: solid 1px;
+  border-right: solid 1px;
+  border-color: rgba(0, 255, 255, 0.285);
+  padding-bottom: 100px; }
+
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.title-fondo {
+  margin-top: 60px;
+  z-index: 1;
+  border-bottom: solid 1px rgba(0, 255, 255, 0.285); }
+
+.title-logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  transition: 0.5s ease; }
+  .title-logo:hover {
+    animation: bounce 1.5s;
+    animation-iteration-count: infinite;
+    filter: drop-shadow(0px 0px 20px rgba(0, 213, 255, 0.674)); }
+
+@keyframes bounce {
+  30% {
+    -webkit-transform: translateY(-10px); } }
+
+.home-ho {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.home {
+  display: flexbox;
+  color: #e9e9e7;
+  /* ------------- FOOTER -----------------*/
+  /* ------------- OCULTAR SCROLL BAR-----------------*/
+  /*--------------CARDs--------------*/
+  /*-------------- Reglas --------------*/
+  /*-------------- Reglas --------------*/
+  /*-------------- Contacto --------------*/ }
+  .home h1 {
+    text-align: center;
+    margin-top: 30px; }
+  .home p {
+    margin-left: 8%;
+    margin-right: 8%; }
+  .home article {
+    box-shadow: 15px 15px 20px black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    border: solid 1px #110b01;
+    border-radius: 12px;
+    background-image: url(../img/woodtexture.png);
+    background-size: cover; }
+    .home article img {
+      border-radius: 10px; }
+  .home .sm article {
+    box-shadow: 15px 15px 20px black;
+    display: flex;
+    flex-direction: Column;
+    margin-top: 40px;
+    border: solid 1px #110b01;
+    border-radius: 12px;
+    background-image: url(../img/woodtexture.png);
+    background-size: cover; }
+  .home .sm img {
+    border-radius: 10px 10px 0px 0px; }
+  .home .article-left p {
+    margin: 20px;
+    min-height: 50px; }
+  .home .article-left h2 {
+    margin: 20px;
+    min-height: 50px; }
+  .home .article-right p {
+    margin: 20px; }
+  .home .article-right h2 {
+    margin: 20px; }
+  .home section {
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%; }
+  .home section h1 {
+    text-align: center; }
+  .home .footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    background-image: url(../img/metaltexture.png);
+    border-bottom: solid 0.2px #0e1521;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    width: 100%;
+    color: white;
+    position: static; }
+    .home .footer p {
+      font-size: 0.8rem;
+      margin-left: 5%; }
+    .home .footer div {
+      display: flex;
+      flex-direction: row;
+      margin-right: 5%; }
+    .home .footer a img {
+      margin-left: 15px; }
+  .home body::-webkit-scrollbar {
+    width: 0px;
+    height: 0px; }
+  .home body::-webkit-scrollbar button {
+    width: 0px;
+    height: 0px; }
+  .home body::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 0px none transparent;
+    border-radius: 50px; }
+  .home body ::-webkit-scrollbar-thumb:hover {
+    background: transparent; }
+  .home body ::-webkit-scrollbar-thumb:active {
+    background: transparent; }
+  .home body::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0px none transparent;
+    border-radius: 50px; }
+  .home body::-webkit-scrollbar-track:hover {
+    background: transparent; }
+  .home body ::-webkit-scrollbar-track:active {
+    background: transparent; }
+  .home body ::-webkit-scrollbar-corner {
+    background: transparent; }
+  .home .home-cr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .home .home-cr h1 {
+      justify-self: center;
+      align-self: center;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      align-content: center; }
+  .home .card {
+    height: 100%;
+    border: solid black 1px;
+    color: black;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 15px 15px 20px black; }
+    .home .card img {
+      border-radius: 12px 12px 0px 0px; }
+    .home .card ul {
+      margin-top: 5px;
+      flex-direction: column; }
+    .home .card li {
+      margin: 0px; }
+    .home .card h2 {
+      margin-top: 0px;
+      margin-bottom: 0; }
+    .home .card p {
+      color: black;
+      margin: 0px;
+      margin-bottom: 10px; }
+  .home .colcard {
+    margin-bottom: 10px; }
+  .home .c-bottom {
+    height: 100%;
+    margin: 0px;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .home .home-rg article div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .home .home-rg article div h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 15px;
+      width: 180px;
+      filter: drop-shadow(10px 10px 5px black); }
+    .home .home-rg article div p {
+      margin: 15px; }
+  .home iframe {
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 2px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.796); }
+  .home fieldset {
+    border-radius: 12px; }
+    .home fieldset .div {
+      display: flexbox;
+      flex-direction: colummn;
+      justify-content: space-between;
+      width: 95%;
+      margin: 2.5%; }
+    .home fieldset .div2 {
+      justify-content: initial; }
+    .home fieldset d2 {
+      display: flexbox;
+      justify-content: end; }
+    .home fieldset select {
+      height: 25px;
+      border-radius: 6px;
+      margin-top: 5px; }
+    .home fieldset input {
+      margin-top: 5px;
+      height: 25px;
+      border-radius: 6px; }
+    .home fieldset textarea {
+      width: 95%;
+      margin: 2.5%;
+      resize: none;
+      border-radius: 6px; }
+    .home fieldset legend {
+      margin-left: 2%; }
+  .home .input-button {
+    margin-left: 2%; }
+  .home .final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%; }
+    .home .final #enviar {
+      padding: 1em;
+      border-radius: 20px;
+      width: 100px; }
+      .home .final #enviar:hover {
+        background-color: #c4ffff;
+        transition: 0.5s ease;
+        filter: drop-shadow(0px 0px 10px rgba(140, 254, 237, 0.604)); }
+      .home .final #enviar:active {
+        background-color: #8cfeed; }
