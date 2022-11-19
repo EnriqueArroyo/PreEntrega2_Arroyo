@@ -290,11 +290,11 @@
       margin-right: 5%; }
     * .footer a img {
       margin-left: 15px; }
-    * .footer a .btn-amazon:hover {
+    * .footer .btn-amazon:hover {
       filter: drop-shadow(0px 0px 20px #ffffff9e); }
-    * .footer a .btn-instagram:hover {
+    * .footer .btn-instagram:hover {
       filter: drop-shadow(0px 0px 20px #f90808ea); }
-    * .footer a .btn-facebook:hover {
+    * .footer .btn-facebook:hover {
       filter: drop-shadow(0px 0px 20px #0051ff7c); }
-    * .footer a .btn-twitter:hover {
+    * .footer .btn-twitter:hover {
       filter: drop-shadow(0px 0px 20px #00e5ff99); }
