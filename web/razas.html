@@ -38,7 +38,8 @@
               alt="logo"
               class="logo-brand"
               width="48px"
-          /></a>
+            />
+          </a>
 
           <button
             class="navbar-toggler"
@@ -48,25 +49,44 @@
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
-            <svg xmlns="http://www.w3.org/2000/svg" height="2rem" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="red">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
+          >         
             <span class="navbar-toggler-icon"></span>
-
           </button>
           <div
             class="collapse navbar-expand-sm navbar-collapse"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a href="../index.html">Home</a></li>
-              <li class="nav-item"><a href="../web/clases.html">Clases</a></li>
-              <li class="nav-item"><a href="../web/razas.html">Razas</a></li>
-              <li class="nav-item"><a href="../web/reglas.html">Reglas</a></li>
-              <li class="nav-item">
-                <a href="../web/contacto.html">Contacto</a>
-              </li>
-            </ul>
+            <div class="container d-none d-lg-block d-xl-block">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item">
+                  <a href="../web/clases.html">Clases</a>
+                </li>
+                <li class="nav-item"><a href="../web/razas.html">Razas</a></li>
+                <li class="nav-item">
+                  <a href="../web/reglas.html">Reglas</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../web/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Lista para cuando esta small se vea oscuro-->
+            <div class="sm container d-md-block d-lg-none">
+              <ul class="navexpand navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item">
+                  <a href="../web/clases.html">Clases</a>
+                </li>
+                <li class="nav-item"><a href="../web/razas.html">Razas</a></li>
+                <li class="nav-item">
+                  <a href="../web/reglas.html">Reglas</a>
+                </li>
+                <li class="nav-item">
+                  <a href="../web/contacto.html">Contacto</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
