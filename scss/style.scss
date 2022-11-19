@@ -414,8 +414,24 @@
         img {
           margin-left: 15px;
         }
+        $redes: (
+          amazon: #ffffff9e,
+          instagram:  #f90808ea,
+          facebook: #0051ff7c,
+          twitter: #00e5ff99,
+        );
+      
+        @each $red, $color in $redes {
+          .btn-#{$red}{
+            &:hover {
+              filter: drop-shadow(0px 0px 20px $color);
+              
+          }
+        }
+      }
       }
     }
+
   }
 
 
