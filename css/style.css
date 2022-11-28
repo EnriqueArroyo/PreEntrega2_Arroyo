@@ -335,9 +335,8 @@
       position: relative;
       display: inline-block;
       margin-right: 2px;
-      margin-top: 0px;
       margin-bottom: 1em;
-      width: 350px; }
+      width: 325px; }
       * .galeria-razas .flip > .front,
       * .galeria-razas .flip > .back {
         display: block;
@@ -352,7 +351,7 @@
         text-align: center; }
         * .galeria-razas .flip > .front p,
         * .galeria-razas .flip > .back p {
-          font-size: 0.9125rem;
+          font-size: 0.82rem;
           line-height: 160%;
           color: #999; }
     * .galeria-razas .text-shadow {
