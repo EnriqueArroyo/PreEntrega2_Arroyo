@@ -1,9 +1,9 @@
-@mixin flex-row{
+@mixin flex-row {
   display: flex;
   flex-direction: row;
 }
 
-@mixin flex-column{
+@mixin flex-column {
   display: flex;
   flex-direction: column;
 }
@@ -20,7 +20,7 @@
     cursor: url("../img/cursor.cur"), auto;
     cursor: url("../img/cursor.cur"), pointer;
     cursor: pointer = url("../img/cursor.cur");
-/* ------------- NAV -----------------*/
+    /* ------------- NAV -----------------*/
     .nav {
       @include flex-row;
       background-image: url(../img/metaltexture.png);
@@ -246,195 +246,268 @@
         background: transparent;
       }
 
-
       /*--------------CARDs--------------*/
 
-    
-
-        h1 {
-          justify-self: center;
-          align-self: center;
-          justify-content: center;
-          justify-items: center;
-          align-items: center;
-          align-content: center;
-        }
-      }
-
-      .card {
-        height: 100%;
-        border: solid black 1px;
-        color: black;
-        background-image: linear-gradient(
-          to top,
-          #d5d4d0 0%,
-          #d5d4d0 1%,
-          #eeeeec 31%,
-          #efeeec 75%,
-          #e9e9e7 100%
-        );
-        border-radius: 12px;
-        @include flex-column;
-
-        box-shadow: 15px 15px 20px black;
-
-        img {
-          border-radius: 12px 12px 0px 0px;
-        }
-
-        ul {
-          margin-top: 5px;
-          flex-direction: column;
-        }
-
-        li {
-          margin: 0px;
-        }
-
-        h2 {
-          margin-top: 0px;
-          margin-bottom: 0;
-        }
-
-        p {
-          color: black;
-          margin: 0px;
-          margin-bottom: 10px;
-        }
-      }
-      .colcard {
-        margin-bottom: 10px;
-      }
-
-      .c-bottom {
-        height: 100%;
-        margin: 0px;
-        padding: 1%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      iframe {
-        margin-top: 50px;
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 2%;
-        padding-right: 2%;
-        border-radius: 2px;
-        width: 100%;
-
-        background: rgba(0, 0, 0, 0.796);
-      }
-
-      /*-------------- Contacto --------------*/
-
-      fieldset {
-        border-radius: 12px;
-        .div {
-          display: flexbox;
-          flex-direction: colummn;
-          justify-content: space-between;
-          width: 95%;
-          margin: 2.5%;
-        }
-        .div2 {
-          justify-content: initial;
-        }
-        d2 {
-          display: flexbox;
-          justify-content: end;
-        }
-        select {
-          height: 25px;
-          border-radius: 6px;
-          margin-top: 5px;
-        }
-        input {
-          margin-top: 5px;
-          height: 25px;
-          border-radius: 6px;
-        }
-        textarea {
-          width: 95%;
-          margin: 2.5%;
-          resize: none;
-          border-radius: 6px;
-        }
-        legend {
-          margin-left: 2%;
-        }
-      }
-      .input-button {
-        margin-left: 2%;
-      }
-      .final {
-        @include flex-row;
-        justify-content: space-between;
-        margin-left: 5%;
-        margin-right: 5%;
-        #enviar {
-          padding: 1em;
-          border-radius: 20px;
-          width: 100px;
-          &:hover {
-            background-color: rgb(196, 255, 255);
-            transition: 0.5s ease;
-            filter: drop-shadow(0px 0px 10px rgba(140, 254, 237, 0.604));
-          }
-          &:active {
-            background-color: rgb(140, 254, 237);
-          }
-        }
+      h1 {
+        justify-self: center;
+        align-self: center;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
       }
     }
 
-    /* ------------- FOOTER -----------------*/
-    .footer {
-      @include flex-row;
-      margin-top: 3%;
-      background-image: url(../img/metaltexture.png);
-      border-bottom: solid 0.2px rgb(14, 21, 33);
-      justify-content: space-between;
-      align-items: center;
-      height: 58px;
-      width: 100%;
-      color: rgb(255, 255, 255);
-      position: static;
+    .card {
+      height: 100%;
+      border: solid black 1px;
+      color: black;
+      background-image: linear-gradient(
+        to top,
+        #d5d4d0 0%,
+        #d5d4d0 1%,
+        #eeeeec 31%,
+        #efeeec 75%,
+        #e9e9e7 100%
+      );
+      border-radius: 12px;
+      @include flex-column;
+
+      box-shadow: 15px 15px 20px black;
+
+      img {
+        border-radius: 12px 12px 0px 0px;
+      }
+
+      ul {
+        margin-top: 5px;
+        flex-direction: column;
+      }
+
+      li {
+        margin: 0px;
+      }
+
+      h2 {
+        margin-top: 0px;
+        margin-bottom: 0;
+      }
 
       p {
-        font-size: 0.8rem;
-        margin-left: 5%;
+        color: black;
+        margin: 0px;
+        margin-bottom: 10px;
       }
+    }
+    .colcard {
+      margin-bottom: 10px;
+    }
 
-      div {
-        @include flex-row;
-        margin-right: 5%;
+    .c-bottom {
+      height: 100%;
+      margin: 0px;
+      padding: 1%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    iframe {
+      margin-top: 50px;
+      margin-left: 0px;
+      margin-right: 0px;
+      padding-left: 2%;
+      padding-right: 2%;
+      border-radius: 2px;
+      width: 100%;
+
+      background: rgba(0, 0, 0, 0.796);
+    }
+
+    /*-------------- Contacto --------------*/
+
+    fieldset {
+      border-radius: 12px;
+      .div {
+        display: flexbox;
+        flex-direction: colummn;
+        justify-content: space-between;
+        width: 95%;
+        margin: 2.5%;
       }
-      a {
-        img {
-          margin-left: 15px;
+      .div2 {
+        justify-content: initial;
+      }
+      d2 {
+        display: flexbox;
+        justify-content: end;
+      }
+      select {
+        height: 25px;
+        border-radius: 6px;
+        margin-top: 5px;
+      }
+      input {
+        margin-top: 5px;
+        height: 25px;
+        border-radius: 6px;
+      }
+      textarea {
+        width: 95%;
+        margin: 2.5%;
+        resize: none;
+        border-radius: 6px;
+      }
+      legend {
+        margin-left: 2%;
+      }
+    }
+    .input-button {
+      margin-left: 2%;
+    }
+    .final {
+      @include flex-row;
+      justify-content: space-between;
+      margin-left: 5%;
+      margin-right: 5%;
+      #enviar {
+        padding: 1em;
+        border-radius: 20px;
+        width: 100px;
+        &:hover {
+          background-color: rgb(196, 255, 255);
+          transition: 0.5s ease;
+          filter: drop-shadow(0px 0px 10px rgba(140, 254, 237, 0.604));
         }
-        
-      }
-      $redes: (
-          amazon: #ffffff9e,
-          instagram:  #f90808ea,
-          facebook: #0051ff7c,
-          twitter: #00e5ff99,
-        );
-      
-        @each $red, $color in $redes {
-          .btn-#{$red}{
-            &:hover {
-              filter: drop-shadow(0px 0px 20px $color);
-              
-          }
+        &:active {
+          background-color: rgb(140, 254, 237);
         }
       }
     }
-
   }
 
+  /* ------------- FOOTER -----------------*/
+  .footer {
+    @include flex-row;
+    margin-top: 3%;
+    background-image: url(../img/metaltexture.png);
+    border-bottom: solid 0.2px rgb(14, 21, 33);
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position: static;
 
+    p {
+      font-size: 0.8rem;
+      margin-left: 5%;
+    }
 
+    div {
+      @include flex-row;
+      margin-right: 5%;
+    }
+    a {
+      img {
+        margin-left: 15px;
+      }
+    }
+    $redes: (
+      amazon: #ffffff9e,
+      instagram: #f90808ea,
+      facebook: #0051ff7c,
+      twitter: #00e5ff99,
+    );
+
+    @each $red, $color in $redes {
+      .btn-#{$red} {
+        &:hover {
+          filter: drop-shadow(0px 0px 20px $color);
+        }
+      }
+    }
+  }
+
+  .galeria-razas {
+    box-sizing: border-box;
+    font-weight: normal;
+    color: #555;
+    text-align: center;
+    font-family: "Roboto Mono";
+    padding: 1em;
+    .flip {
+      position: relative;
+      > .front,
+      > .back {
+        display: block;
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition-duration: 0.8s;
+        transition-property: transform, opacity;
+      }
+      > .front {
+        h1 {
+          margin-top: 40%;
+          font-size: 2.2em;
+        }
+        transform: rotateY(0deg);
+      }
+      > .back {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: rotateY(-180deg);
+      }
+      &:hover {
+        > .front {
+          transform: rotateY(180deg);
+        }
+        > .back {
+          opacity: 1;
+          transform: rotateY(0deg);
+        }
+      }
+    }
+    .flip {
+      position: relative;
+      display: inline-block;
+      margin-right: 2px;
+      margin-bottom: 1em;
+      width: 350px;
+      > .front,
+      > .back {
+        
+        display: block;
+        color: white;
+        width: inherit;
+        background-size: cover !important;
+        background-position: center !important;
+        height: 220px;
+        padding: 1em 1em;
+        background: #313131;
+        border-radius: 10px;
+        text-align: center;
+        p {
+          font-size: 0.9125rem;
+          line-height: 160%;
+          color: #999;
+        }
+      }
+    }
+    .text-shadow {
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
+        3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
+        0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04),
+        7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04),
+        9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04),
+        11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04),
+        13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04),
+        0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04),
+        17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04),
+        19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+    }
+  }
+}
